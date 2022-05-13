@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录QQ邮箱</title>
+		<style type="text/css">
+			*{
+				margin: 0;padding: 0;
+				font-size: 12px;font-family: "lucida Grande";
+			}
+			a{
+				color: black;text-decoration: none;
+			}
+			audio{
+				margin-top: 70px;
+				width: 20px;
+				float: right;
+			}
+			/*top*/
+			.top-content{
+				height: 62px;
+				border-bottom: 1px solid #d6dfea;
+				background-color: #eff4fa;
+				}
+			.top-logo{
+				float: left;
+				width: 182px;
+				height: 35px;
+				margin-top: 14px;
+				margin-left: 40px;
+			}
+			.top-user{
+				float: right;
+				padding-top: 24px;
+				padding-right: 40px;
+				box-sizing: border-box;
+			}
+			.jiben{
+				display: inline-block;
+				width: 44px;border-right: 1px solid #1d5494;
+				color:#215994;
+			}
+			.eng{
+				display: inline-block;
+				width: 44px;border-right: 1px solid #1d5494;
+				color:#215994;
+			}
+			.shouji{
+				display: inline-block;
+				width: 44px;border-right: 1px solid #1d5494;
+				color:#215994;
+			}
+			.qiye{
+				color:#215994;
+			}
+			.jiben:hover{
+				text-decoration: underline
+			}
+			.eng:hover{
+				text-decoration: underline
+			}
+			.shouji:hover{
+				text-decoration: underline
+			}
+			.qiye:hover{
+				text-decoration: underline
+			}
+			
+			
+			/*mid*/
+			.mid-content{
+				width: 915px;
+				height: 429px;
+				background-color: white;
+				margin: 32px auto;
+				padding: 0 24px;
+				padding-top: 40px;
+			}
+			.img{
+				width: 520px;
+				height: 400px;
+				float: left;
+			}
+			.denglu{
+				width: 334px;
+				height: 380px;
+				float: right;
+				border: 1px solid #a0b1c4;
+				background-color: #FFFFFF;
+			}
+			.denglu-top{
+				background-color: #f9fbfe;
+			}
+			.weixin{
+				float: left;
+				width: 50%;
+				font-size: 16px;
+				line-height: 50px;
+				color: #999;
+				text-align: center;
+				background-color: #f9fbfe;
+				border-bottom:1px solid #a0b1c4;
+			}
+			.qq{
+				float: left;
+				width: 50%;
+				font-size: 16px;
+				line-height: 50px;
+				color: #block;
+				text-align: center;
+				background-color: #f9fbfe;
+				border-bottom:1px solid #a0b1c4;
+			}
+			.denglu-bottom{
+				background-color: white;
+			}
+			.shu-ru-kuang{
+				margin-bottom: 20px;
+				margin-left: 20px;
+			}
+			.shu-ru-kuang-input1{
+				box-sizing: border-box;
+				width: 284px;
+				height: 40px;
+				font-size: 16px;
+				padding: 10px 40px 10px 10px;
+				color: #999;
+				margin-top: 35px;
+			}
+			.shu-ru-kuang-input2{
+				box-sizing: border-box;
+				width: 284px;
+				height: 40px;
+				font-size: 16px;
+				padding: 10px 40px 10px 10px;
+				color: #999;
+				margin-top: -8px;
+			}
+			.fu-xuan-kuang{
+				width: 95px;
+				height: 18px;
+				margin-bottom: 15px;
+				margin-left: 20px;
+			}
+			.gou{
+				height: 16px;
+				width: 16px;
+				border: 1px solid #96a5b4;
+			}
+			.xiaci{
+				height: 18px;
+				line-height: 18px;
+			}
+			.deng-lu{
+				width: 85%;
+				height: 40px;
+				line-height: 39px;
+				background-color: #5a98de;
+				color: white;
+				text-align: center;
+				margin-bottom: 20px;
+				margin-left: 20px;
+			}
+			.kuaijiedenglu{
+				font-size: 13px;
+				line-height: 20px;
+				box-sizing: border-box;
+				color: #225592;
+				margin-left: 20px;
+				padding-left: 102px
+			}
+			.last-bottom{
+				width: 282px;
+				margin-bottom: 15px;
+				margin-left: 20px;
+				margin-top: 35px;
+			}
+			.wangjimima{
+				display: block;
+				float: left;
+				color: #225592;
+			}
+			.zhuce{
+				color: #225592;
+			}
+			.wangjimima:hover{
+				text-decoration: underline
+			}
+			.zhuce:hover{
+				text-decoration: underline
+			}
+			
+			
+			/*bottom*/
+			.bottom-content{
+				height: 37px;
+				width:100%;
+				background-color: #eff4fa;
+				text-align: center;
+				box-sizing: 12px;
+				bottom: 0;
+				position: fixed;
+				box-sizing: border-box;
+				padding-top: 10px;
+			}
+			.guanyu{
+				color: #1d5494;
+			}
+			.guanyu:hover{
+				text-decoration: underline
+			}
+			.fuwu{
+				color: #1d5494;
+			}
+			.fuwu:hover{
+				text-decoration: underline
+			}
+			.yingsi{
+				color: #1d5494;
+			}
+			.yingsi:hover{
+				text-decoration: underline
+			}
+			.kefu{
+				color: #1d5494;
+			}
+			.kefu:hover{
+				text-decoration: underline
+			}
+			.lianxi{
+				color: #1d5494;
+			}
+			.lianxi:hover{
+				text-decoration: underline
+			}
+			.bangzhu{
+				color: #1d5494;
+			}
+			.bangzhu:hover{
+				text-decoration: underline
+			}
+			.bottom-right{
+				color: #868686;
+			}
+		</style>
+	</head>
+	<body>
+		<audio controls autoplay loop src="media/天外来物.mp3"></audio>
+		<div class="top">
+			<div class="top-content clear">
+			  <div class="top-logo">
+				<img src="img/QQ邮箱.png"/>
+			  </div>
+			  <div class="top-user">
+				<a class="jiben" href="#">基本版</a>
+				<a class="eng" href="#">English</a>
+				<a class="shouji" href="#">手机版</a>
+				<a class="qiye" href="#">企业邮箱</a>
+			  </div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="mid">
+			<div class="mid-content clear">
+				<div class="img">
+					<img width="528px" height="322px" src="img/QQ邮箱1.jpg"/>
+				</div>
+			  <div class="denglu">
+				<div class="denglu-top">
+					<a href="#" class="weixin">微信登录</a>
+					<a href="#" class="qq">QQ登录</a>
+				</div>
+				<div class="denglu-bottom">
+					<p class="shu-ru-kuang">
+						<input class="shu-ru-kuang-input1" type="text" value="支持QQ号/邮箱/手机号登录"/>
+					</p>
+					<p class="shu-ru-kuang">
+						<input class="shu-ru-kuang-input2" type="text" value="QQ密码"/>
+					</p>
+					<p class="fu-xuan-kuang">
+						<input class="gou" type="checkbox" />
+						<span class="xiaci">下次自动登录</span>
+					</p>
+					</p>
+					<p class="deng-lu">
+						登录
+					</p>
+					<a href="#" class="kuaijiedenglu">扫码快捷登录</a>
+					<div class="last-bottom">
+					<a href="#" class="wangjimima">忘了密码?</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#" class="zhuce">注册新账号</a>
+					</div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="bottom">
+			<div class="bottom-content">
+				<div class="bottom-left">
+					<a href="#" class="guanyu">关于腾讯</a>
+					&nbsp;|&nbsp;
+					<a href="#" class="fuwu">服务条款</a>
+					&nbsp;|&nbsp;
+					<a href="#" class="yingsi">隐私政策</a>
+					&nbsp;|&nbsp;
+					<a href="#" class="kefu">客服中心</a>
+					&nbsp;|&nbsp;
+					<a href="#" class="lianxi">联系我们</a>
+					&nbsp;|&nbsp;
+					<a href="#" class="bangzhu">帮助中心</a>
+					&nbsp;|
+					<span class="bottom-right"> ©1998 - 2021 Tencent Inc. All Rights Reserved.</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
